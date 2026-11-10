@@ -62,6 +62,12 @@
       }
     },
     {
+  "type": "image",
+  "src": "samples/test-slide.png",
+  "caption": "Image scene exported to PowerPoint",
+  "duration": 2
+    },
+    {
       "type": "outro",
       "text": "Thank you",
       "duration": 2.5
