@@ -448,6 +448,8 @@ def render(spec_path: str, output: str, workdir: str | None = None):
             video_clips.append(clip)
 
         art = {}
+        if stype == "image":
+            art["image_png"] = str(Path(scene["src"]).resolve())
         if audio_path:
             art["narration_path"] = audio_path
         img_path = scene_image_clip(scene, theme, workdir) if scene.get("image") else None
